@@ -1,5 +1,7 @@
 import { TabNavigator } from 'react-navigation';
 
+import Initial from './pages/Initial/Initial';
+import Login from './pages/Login/Login';
 import Home from './pages/Home/Home';
 import Activity from './pages/Activity/Activity';
 import Venue from './pages/Venue/Venue';
@@ -7,6 +9,16 @@ import Maps from './pages/Maps/Maps';
 import Colors from './res/Colors';
 
 const Tabs = TabNavigator({
+  // 初始页
+  Initial: {
+    screen: Initial,
+  },
+
+  // 登录页
+  Login: {
+    screen: Login,
+  },
+
   Home: {
     screen: Home,
   },
